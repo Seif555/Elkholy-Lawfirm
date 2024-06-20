@@ -8,50 +8,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-}
-
-/* Navigation styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-    header nav ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-            header nav ul li a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-/* Hero section styles */
-#hero {
-    background-color: #f2f2f2;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
+    background-color: #f0f0f0;
 }
 
 /* Sections */
-section {
-    padding: 80px 0;
+.section {
+    padding: 100px 0;
 }
 
 .container {
@@ -70,47 +32,129 @@ p {
     margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+/* Home Section */
+#home {
+    height: 100vh;
+    background-image: url('https://via.placeholder.com/1500x800/cccccc/ffffff?text=Home+Background');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-    ul li {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-    }
-
-/* Team section */
-.team-member {
+.centered-text {
     text-align: center;
-    margin-bottom: 30px;
 }
 
-    .team-member img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
+    .centered-text h1 {
+        font-size: 4rem;
+    }
+
+/* Services Section */
+.service {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.service-item {
+    flex: 0 0 48%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+    .service-item h3 {
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
 
-    .team-member h3 {
-        font-size: 1.8rem;
+    .service-item p {
+        font-size: 1rem;
+    }
+
+/* Achievements Section */
+.achievement {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.achievement-item {
+    flex: 0 0 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+    .achievement-item h3 {
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
 
-    .team-member p {
-        font-size: 1.1rem;
+    .achievement-item p {
+        font-size: 1rem;
     }
 
-/* Contact section */
-#contact p {
-    font-size: 1.1rem;
+/* Team Members Section */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.team-member-image {
+    flex: 0 0 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    text-align: center;
+    line-height: 150px; /* Adjust to center text vertically */
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
+.team-member p {
+    font-size: 1rem;
+}
+
+/* Sponsors Section */
+.sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+    .sponsor p {
+        flex: 0 0 50%;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+/* Contact Us Section */
+#contact-us {
     background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+    #contact-us p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+footer {
+    background-color: #555;
     color: #fff;
     text-align: center;
     padding: 10px 0;
